@@ -1,0 +1,13 @@
+Date which follows given Distributions does not have a log-normal distribution or a Gaussian distribution 
+
+1] Uniform Distribution
+2] Exponential Distribution
+3] Binomial Distribution
+4] Poisson Distribution
+
+example:- 
+we know that a fair die has sides 1, 2, 3, 4, 5, 6 and Each side is equal probality i.e. 1/6.
+if it is thown large number of times then  Each number from 1 to 6 will occur with approximately equal frequency. 
+it will not create a bell-shaped histogram but it will follow Uniform distribution.
+
+

@@ -1,0 +1,35 @@
+The five-number summary is a descriptive statistics technique used to summarize the distribution of a data. 
+It consists of five key values that provides information about the range, central tendency, and variability of the data.
+These five numbers are:
+
+1] Minimum - The smallest value in the data.
+2] First Quartile (Q1): The value below which 25% of the data fall. It is also known as the First quartile.
+3] Median (Q2): The middle value of the data when it is ordered from smallest to largest. 
+                It represents the 50th percentile of the data and divides the data into two equal halves.
+
+4] Third Quartile (Q3): The value below which 75% of the data fall. It is also known as the upper quartile.
+5] Maximum: The largest value in the data.
+
+expample: -
+data = [2,1,6,  5, 15, 7, 9, 12,  18, 19, 27]
+
+sort the list  in ascending order 
+data.sort()
+data =  [1, 2, 5, 6, 7, 9, 12, 15, 18, 19, 27]
+
+
+Find the minimum and maximum for your data set. Now that your numbers are in order, this should be easy to spot.
+ the minimum (the smallest number) is 1 and 
+ the maximum (the largest number) is 27.
+
+Find the median:
+     The median is the middle number. 
+
+Find First Quartile (Q1) and Third Quartile (Q3):
+    let's separate data for Q1 and Q3
+    (1, 2, 5, 6, 7), 9, (12, 15, 18, 19, 27)
+    ---------------     --------------------
+      first half           second half
+
+if we calculate median of 1st half then we get Q1 = 5
+and same in 2nd half then we get Q3 = 18

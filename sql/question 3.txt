@@ -1,0 +1,6 @@
+SELECT u.user_id, training_date
+FROM users u
+INNER JOIN training_details td ON u.user_id = td.user_id
+GROUP BY u.user_id, td.training_id, td.training_date
+HAVING COUNT(*) > 1
+ORDER BY td.training_date DESC;

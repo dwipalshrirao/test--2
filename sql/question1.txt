@@ -1,0 +1,29 @@
+output for given query
+"""
+SELECT * FROM runners WHERE id NOT IN (SELECT winner_id FROM races)
+"""
+
+is 
+
+-------------------
+id | name |
+..............
+1 | John Doe
+...............
+5 | Lisa Romero
+------------------
+
+explanation:-
+above query loads all "winner_id" from "races" table and check if "id" from "runners" table exist in 
+"winner_id" columns of "races" table and return rows from "runners" table.
+
+As I menetioned, above query loads all "winner_id" from "races" table every row "runners" table
+which can be problem if "races" table has large number of rows.
+
+
+alternative query:
+
+SELECT r.*
+FROM runners r
+LEFT JOIN races ra ON r.id = ra.winner_id
+WHERE ra.winner_id IS NULL;

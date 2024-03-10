@@ -1,0 +1,5 @@
+SELECT e."Manager_Id", m."Emp_name" AS "Manager", AVG(e."Salary") AS "Average_Salary_Under_Manager"
+FROM employees e
+INNER JOIN employees m ON e."Manager_Id" = m."Emp_id"
+GROUP BY e."Manager_Id", m."Emp_name"
+ORDER BY e."Manager_Id";
